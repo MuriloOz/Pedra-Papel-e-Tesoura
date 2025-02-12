@@ -1,7 +1,7 @@
-Fiz um joguinho de Pedra, Papel e Tesoura em Python que roda direto no terminal. Foi bem simples e rápido de fazer.
+Esse código ficou bem redondinho! Fiz um Pedra, Papel e Tesoura que roda no terminal e funciona de forma simples e direta.
 
-Primeiro, importei a biblioteca random, porque precisava que o computador escolhesse entre pedra, papel ou tesoura de forma aleatória. Depois, fiz um loop pra manter o jogo rodando até o jogador decidir parar.
+Primeiro, criei a função get_user_choice() pra garantir que o jogador só escolhesse entre "pedra", "papel" ou "tesoura", evitando entradas inválidas. Depois, fiz o get_computer_choice(), que usa random.choice() pra o computador escolher aleatoriamente uma opção.
 
-A lógica é básica: o jogador escolhe uma opção, o computador também escolhe, e aí comparo as duas pra ver quem ganha. Usei umas condicionais (if, elif, else) pra definir os vencedores e um contador de pontos pra deixar mais competitivo.
+A decisão do vencedor rola dentro de determine_winner(), onde verifico todas as combinações possíveis pra definir quem ganha, perde ou empata. E, claro, play_game() é a função principal, onde tudo acontece: recebe a escolha do jogador, mostra a escolha do computador e exibe o resultado.
 
-No final, adicionei umas mensagens pra deixar o jogo mais dinâmico e pronto! Dá pra jogar quantas vezes quiser sem precisar reiniciar o programa. Simples, funcional e divertido! 😃
+O código é simples, mas funcional! Dá pra melhorar colocando um loop pra jogar várias rodadas ou até um placar. Mas do jeito que tá, já dá pra se divertir rapidinho no terminal! 🚀
