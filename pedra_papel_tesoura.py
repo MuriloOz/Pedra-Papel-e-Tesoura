@@ -12,7 +12,9 @@ def get_computer_choice():
 def determine_winner(user_choice, computer_choice):
     if user_choice == computer_choice:
         return "Empate!"
-    elif (user_choice == 'pedra' and computer_choice == 'tesoura') or          (user_choice == 'papel' and computer_choice == 'pedra') or          (user_choice == 'tesoura' and computer_choice == 'papel'):
+    elif (user_choice == 'pedra' and computer_choice == 'tesoura') or \
+         (user_choice == 'papel' and computer_choice == 'pedra') or \
+         (user_choice == 'tesoura' and computer_choice == 'papel'):
         return "Você ganhou!"
     else:
         return "Você perdeu!"
