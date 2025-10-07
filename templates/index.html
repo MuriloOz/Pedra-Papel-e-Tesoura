@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedra, Papel ou Tesoura</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Pedra, Papel ou Tesoura?</h1>
+    <div class="buttons">
+      <button data-choice="pedra">✊ Pedra</button>
+      <button data-choice="papel">✋ Papel</button>
+      <button data-choice="tesoura">✌️ Tesoura</button>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
