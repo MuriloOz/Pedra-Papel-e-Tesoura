@@ -6,15 +6,20 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <h1>Pedra, Papel ou Tesoura?</h1>
     <div class="buttons">
       <button data-choice="pedra">✊ Pedra</button>
       <button data-choice="papel">✋ Papel</button>
       <button data-choice="tesoura">✌️ Tesoura</button>
     </div>
+
+    <div class="scoreboard">
+      <p>Você: <span id="user-score">0</span> | Computador: <span id="computer-score">0</span></p>
+    </div>
+
     <div id="result"></div>
-  </div>
+</div>
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
