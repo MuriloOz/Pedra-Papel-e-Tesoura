@@ -18,19 +18,22 @@ def play():
     
     if user_choice == computer_choice:
         result = "Empate!"
+        winner = "none"
     elif (user_choice == 'pedra' and computer_choice == 'tesoura') or \
          (user_choice == 'papel' and computer_choice == 'pedra') or \
          (user_choice == 'tesoura' and computer_choice == 'papel'):
         result = "Você ganhou!"
+        winner = "user"
     else:
         result = "Você perdeu!"
+        winner = "computer"
     
     return jsonify({
         "user_choice": user_choice,
         "computer_choice": computer_choice,
-        "result": result
+        "result": result,
+        "winner": winner
     })
 
 if __name__ == "__main__":
     app.run(debug=True)
-# -*- coding: utf-8 -*-
