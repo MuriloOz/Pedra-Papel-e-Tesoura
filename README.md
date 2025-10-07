@@ -1,7 +1,22 @@
-Esse código ficou bem redondinho! Fiz um Pedra, Papel e Tesoura que roda no terminal e funciona de forma simples e direta.
+# 🧩 Pedra, Papel e Tesoura - Jogo Web
 
-Primeiro, criei a função get_user_choice() pra garantir que o jogador só escolhesse entre "pedra", "papel" ou "tesoura", evitando entradas inválidas. Depois, fiz o get_computer_choice(), que usa random.choice() pra o computador escolher aleatoriamente uma opção.
+Um jogo clássico de **Pedra, Papel e Tesoura** desenvolvido com **Python (Flask)** no back-end e **HTML, CSS e JavaScript** no front-end.  
+O projeto possui interface interativa, placar de vitórias e design moderno, perfeito para estudos de **desenvolvimento web full-stack**.
 
-A decisão do vencedor rola dentro de determine_winner(), onde verifico todas as combinações possíveis pra definir quem ganha, perde ou empata. E, claro, play_game() é a função principal, onde tudo acontece: recebe a escolha do jogador, mostra a escolha do computador e exibe o resultado.
+---
 
-O código é simples, mas funcional! Dá pra melhorar colocando um loop pra jogar várias rodadas ou até um placar. Mas do jeito que tá, já dá pra se divertir rapidinho no terminal! 🚀
+## 🎮 Funcionalidades
+
+- Escolha entre **Pedra, Papel ou Tesoura**  
+- Placar de vitórias para **você e o computador**  
+- Resultado do jogo mostrado **sem recarregar a página**  
+- Interface simples, limpa e responsiva  
+- Compatível com navegadores modernos  
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- **Python 3** + **Flask**: Back-end e lógica do jogo  
+- **HTML5 / CSS3 / JavaScript**: Front-end interativo  
+- **Fetch API**: Comunicação entre front-end e back-end via JSON  
