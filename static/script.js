@@ -1,5 +1,10 @@
 const buttons = document.querySelectorAll("button");
 const resultDiv = document.getElementById("result");
+const userScoreSpan = document.getElementById("user-score");
+const computerScoreSpan = document.getElementById("computer-score");
+
+let userScore = 0;
+let computerScore = 0;
 
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -20,6 +25,13 @@ buttons.forEach(btn => {
                     Computador escolheu: ${data.computer_choice} <br>
                     Resultado: <strong>${data.result}</strong>
                 `;
+
+                // Atualiza placar
+                if (data.winner === "user") userScore++;
+                if (data.winner === "computer") computerScore++;
+
+                userScoreSpan.textContent = userScore;
+                computerScoreSpan.textContent = computerScore;
             }
         });
     });
